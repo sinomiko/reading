@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="dsacpp">
+</Property><Property Name="解决方案文件" Value="C:\Users\Miko_Song\Desktop\dsa\dsa\src\dsacpp.sln">
+</Property><Property Name="用户选项文件" Value="C:\Users\Miko_Song\Desktop\dsa\dsa\src\dsacpp.suo">
+</Property><Property Name="Date" Value="2015年3月2日">
+</Property><Property Name="Time" Value="21:26">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="dsacpp.sln" Description="文件已成功备份为 C:\Users\Miko_Song\Desktop\dsa\dsa\src\dsacpp.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="dsacpp.suo" Description="文件已成功备份为 C:\Users\Miko_Song\Desktop\dsa\dsa\src\dsacpp.suo.old">
+</Event><Event ErrorLevel="0" Project="power" Source="power\power.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\power\power.vcproj'.">
+</Event><Event ErrorLevel="1" Project="power" Source="power\power.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="power" Source="power\power.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\power\power.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="power" Source="power\power.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="stack" Source="stack\stack.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\stack\stack.vcproj'.">
+</Event><Event ErrorLevel="1" Project="stack" Source="stack\stack.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="stack" Source="stack\stack.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\stack\stack.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="stack" Source="stack\stack.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="sum" Source="sum\sum.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\sum\sum.vcproj'.">
+</Event><Event ErrorLevel="1" Project="sum" Source="sum\sum.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="sum" Source="sum\sum.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\sum\sum.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="sum" Source="sum\sum.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="vector" Source="vector\vector.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\vector\vector.vcproj'.">
+</Event><Event ErrorLevel="1" Project="vector" Source="vector\vector.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="vector" Source="vector\vector.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\vector\vector.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="vector" Source="vector\vector.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="paren_recursive" Source="nest_recursive\paren_recursive.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\nest_recursive\paren_recursive.vcproj'.">
+</Event><Event ErrorLevel="1" Project="paren_recursive" Source="nest_recursive\paren_recursive.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="paren_recursive" Source="nest_recursive\paren_recursive.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\nest_recursive\paren_recursive.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="paren_recursive" Source="nest_recursive\paren_recursive.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="paren_stack" Source="nest_stack\paren_stack.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\nest_stack\paren_stack.vcproj'.">
+</Event><Event ErrorLevel="1" Project="paren_stack" Source="nest_stack\paren_stack.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="paren_stack" Source="nest_stack\paren_stack.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\nest_stack\paren_stack.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="paren_stack" Source="nest_stack\paren_stack.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="queen_brute_force_2" Source="queen_brute_force_2\queen_brute_force_2.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_brute_force_2\queen_brute_force_2.vcproj'.">
+</Event><Event ErrorLevel="1" Project="queen_brute_force_2" Source="queen_brute_force_2\queen_brute_force_2.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="queen_brute_force_2" Source="queen_brute_force_2\queen_brute_force_2.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_brute_force_2\queen_brute_force_2.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="queen_brute_force_2" Source="queen_brute_force_2\queen_brute_force_2.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="queen_brute_force_1" Source="queen_brute_force_1\queen_brute_force_1.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_brute_force_1\queen_brute_force_1.vcproj'.">
+</Event><Event ErrorLevel="1" Project="queen_brute_force_1" Source="queen_brute_force_1\queen_brute_force_1.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="queen_brute_force_1" Source="queen_brute_force_1\queen_brute_force_1.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_brute_force_1\queen_brute_force_1.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="queen_brute_force_1" Source="queen_brute_force_1\queen_brute_force_1.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="queen_recursive" Source="queen_recursive\queen_recursive.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_recursive\queen_recursive.vcproj'.">
+</Event><Event ErrorLevel="1" Project="queen_recursive" Source="queen_recursive\queen_recursive.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="queen_recursive" Source="queen_recursive\queen_recursive.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_recursive\queen_recursive.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="queen_recursive" Source="queen_recursive\queen_recursive.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="queen_stack" Source="queen_stack\queen_stack.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_stack\queen_stack.vcproj'.">
+</Event><Event ErrorLevel="1" Project="queen_stack" Source="queen_stack\queen_stack.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="queen_stack" Source="queen_stack\queen_stack.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queen_stack\queen_stack.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="queen_stack" Source="queen_stack\queen_stack.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="queue" Source="queue\queue.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queue\queue.vcproj'.">
+</Event><Event ErrorLevel="1" Project="queue" Source="queue\queue.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="queue" Source="queue\queue.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\queue\queue.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="queue" Source="queue\queue.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="binTree" Source="bintree\binTree.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bintree\binTree.vcproj'.">
+</Event><Event ErrorLevel="1" Project="binTree" Source="bintree\binTree.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="binTree" Source="bintree\binTree.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bintree\binTree.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="binTree" Source="bintree\binTree.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="skiplist" Source="skiplist\skiplist.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\skiplist\skiplist.vcproj'.">
+</Event><Event ErrorLevel="1" Project="skiplist" Source="skiplist\skiplist.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="skiplist" Source="skiplist\skiplist.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\skiplist\skiplist.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="skiplist" Source="skiplist\skiplist.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="rpn" Source="rpn\rpn.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\rpn\rpn.vcproj'.">
+</Event><Event ErrorLevel="1" Project="rpn" Source="rpn\rpn.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="rpn" Source="rpn\rpn.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\rpn\rpn.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="rpn" Source="rpn\rpn.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="huffman" Source="huffman\huffman.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\huffman\huffman.vcproj'.">
+</Event><Event ErrorLevel="1" Project="huffman" Source="huffman\huffman.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="huffman" Source="huffman\huffman.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\huffman\huffman.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="huffman" Source="huffman\huffman.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BST" Source="bst\BST.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bst\BST.vcproj'.">
+</Event><Event ErrorLevel="1" Project="BST" Source="bst\BST.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="BST" Source="bst\BST.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bst\BST.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="BST" Source="bst\BST.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AVL" Source="avl\AVL.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\avl\AVL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="AVL" Source="avl\AVL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="AVL" Source="avl\AVL.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\avl\AVL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="AVL" Source="avl\AVL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Splay" Source="splay\Splay.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\splay\Splay.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Splay" Source="splay\Splay.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Splay" Source="splay\Splay.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\splay\Splay.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Splay" Source="splay\Splay.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="prime" Source="prime\prime.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\prime\prime.vcproj'.">
+</Event><Event ErrorLevel="1" Project="prime" Source="prime\prime.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="prime" Source="prime\prime.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\prime\prime.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="prime" Source="prime\prime.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="hashtable" Source="hashtable\hashtable.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\hashtable\hashtable.vcproj'.">
+</Event><Event ErrorLevel="1" Project="hashtable" Source="hashtable\hashtable.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="hashtable" Source="hashtable\hashtable.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\hashtable\hashtable.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="hashtable" Source="hashtable\hashtable.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RedBlack" Source="redblack\RedBlack.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\redblack\RedBlack.vcproj'.">
+</Event><Event ErrorLevel="1" Project="RedBlack" Source="redblack\RedBlack.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="RedBlack" Source="redblack\RedBlack.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\redblack\RedBlack.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="RedBlack" Source="redblack\RedBlack.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PQ_BinHeap" Source="PQ_ComplHeap\PQ_BinHeap.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\PQ_ComplHeap\PQ_BinHeap.vcproj'.">
+</Event><Event ErrorLevel="1" Project="PQ_BinHeap" Source="PQ_ComplHeap\PQ_BinHeap.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="PQ_BinHeap" Source="PQ_ComplHeap\PQ_BinHeap.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\PQ_ComplHeap\PQ_BinHeap.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="PQ_BinHeap" Source="PQ_ComplHeap\PQ_BinHeap.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Huffman_PQ_ComplHeap" Source="Huffman_PQ_ComplHeap\Huffman_PQ_ComplHeap.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Huffman_PQ_ComplHeap\Huffman_PQ_ComplHeap.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Huffman_PQ_ComplHeap" Source="Huffman_PQ_ComplHeap\Huffman_PQ_ComplHeap.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Huffman_PQ_ComplHeap" Source="Huffman_PQ_ComplHeap\Huffman_PQ_ComplHeap.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Huffman_PQ_ComplHeap\Huffman_PQ_ComplHeap.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Huffman_PQ_ComplHeap" Source="Huffman_PQ_ComplHeap\Huffman_PQ_ComplHeap.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PQ_leftHeap" Source="PQ_leftHeap\PQ_leftHeap.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\PQ_leftHeap\PQ_leftHeap.vcproj'.">
+</Event><Event ErrorLevel="1" Project="PQ_leftHeap" Source="PQ_leftHeap\PQ_leftHeap.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="PQ_leftHeap" Source="PQ_leftHeap\PQ_leftHeap.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\PQ_leftHeap\PQ_leftHeap.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="PQ_leftHeap" Source="PQ_leftHeap\PQ_leftHeap.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Huffman_PQ_LeftHeap" Source="Huffman_PQ_LeftHeap\Huffman_PQ_LeftHeap.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Huffman_PQ_LeftHeap\Huffman_PQ_LeftHeap.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Huffman_PQ_LeftHeap" Source="Huffman_PQ_LeftHeap\Huffman_PQ_LeftHeap.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Huffman_PQ_LeftHeap" Source="Huffman_PQ_LeftHeap\Huffman_PQ_LeftHeap.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Huffman_PQ_LeftHeap\Huffman_PQ_LeftHeap.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Huffman_PQ_LeftHeap" Source="Huffman_PQ_LeftHeap\Huffman_PQ_LeftHeap.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PQ_List" Source="pq_list\PQ_List.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\pq_list\PQ_List.vcproj'.">
+</Event><Event ErrorLevel="1" Project="PQ_List" Source="pq_list\PQ_List.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="PQ_List" Source="pq_list\PQ_List.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\pq_list\PQ_List.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="PQ_List" Source="pq_list\PQ_List.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Huffman_PQ_List" Source="Huffman_PQ_List\Huffman_PQ_List.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Huffman_PQ_List\Huffman_PQ_List.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Huffman_PQ_List" Source="Huffman_PQ_List\Huffman_PQ_List.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Huffman_PQ_List" Source="Huffman_PQ_List\Huffman_PQ_List.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Huffman_PQ_List\Huffman_PQ_List.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Huffman_PQ_List" Source="Huffman_PQ_List\Huffman_PQ_List.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Prefix_free_Codes" Source="Prefix_free_Codes\Prefix_free_Codes.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Prefix_free_Codes\Prefix_free_Codes.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Prefix_free_Codes" Source="Prefix_free_Codes\Prefix_free_Codes.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Prefix_free_Codes" Source="Prefix_free_Codes\Prefix_free_Codes.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Prefix_free_Codes\Prefix_free_Codes.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Prefix_free_Codes" Source="Prefix_free_Codes\Prefix_free_Codes.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="string_pm_bf1" Source="string_pm_bf1\string_pm_bf1.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bf1\string_pm_bf1.vcproj'.">
+</Event><Event ErrorLevel="1" Project="string_pm_bf1" Source="string_pm_bf1\string_pm_bf1.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="string_pm_bf1" Source="string_pm_bf1\string_pm_bf1.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bf1\string_pm_bf1.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="string_pm_bf1" Source="string_pm_bf1\string_pm_bf1.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="string_pm_bf2" Source="string_pm_bf2\string_pm_bf2.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bf2\string_pm_bf2.vcproj'.">
+</Event><Event ErrorLevel="1" Project="string_pm_bf2" Source="string_pm_bf2\string_pm_bf2.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="string_pm_bf2" Source="string_pm_bf2\string_pm_bf2.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bf2\string_pm_bf2.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="string_pm_bf2" Source="string_pm_bf2\string_pm_bf2.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="string_pm_kmp" Source="string_pm_kmp\string_pm_kmp.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_kmp\string_pm_kmp.vcproj'.">
+</Event><Event ErrorLevel="1" Project="string_pm_kmp" Source="string_pm_kmp\string_pm_kmp.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="string_pm_kmp" Source="string_pm_kmp\string_pm_kmp.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_kmp\string_pm_kmp.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="string_pm_kmp" Source="string_pm_kmp\string_pm_kmp.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="string_pm_kmp_improved" Source="string_pm_kmp_improved\string_pm_kmp_improved.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_kmp_improved\string_pm_kmp_improved.vcproj'.">
+</Event><Event ErrorLevel="1" Project="string_pm_kmp_improved" Source="string_pm_kmp_improved\string_pm_kmp_improved.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="string_pm_kmp_improved" Source="string_pm_kmp_improved\string_pm_kmp_improved.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_kmp_improved\string_pm_kmp_improved.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="string_pm_kmp_improved" Source="string_pm_kmp_improved\string_pm_kmp_improved.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="string_pm_bm_bc" Source="string_pm_bm_bc\string_pm_bm_bc.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bm_bc\string_pm_bm_bc.vcproj'.">
+</Event><Event ErrorLevel="1" Project="string_pm_bm_bc" Source="string_pm_bm_bc\string_pm_bm_bc.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="string_pm_bm_bc" Source="string_pm_bm_bc\string_pm_bm_bc.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bm_bc\string_pm_bm_bc.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="string_pm_bm_bc" Source="string_pm_bm_bc\string_pm_bm_bc.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="string_pm_bm_bc+gs" Source="string_pm_bm_bc+gs\string_pm_bm_bc+gs.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bm_bc+gs\string_pm_bm_bc+gs.vcproj'.">
+</Event><Event ErrorLevel="1" Project="string_pm_bm_bc+gs" Source="string_pm_bm_bc+gs\string_pm_bm_bc+gs.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="string_pm_bm_bc+gs" Source="string_pm_bm_bc+gs\string_pm_bm_bc+gs.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_bm_bc+gs\string_pm_bm_bc+gs.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="string_pm_bm_bc+gs" Source="string_pm_bm_bc+gs\string_pm_bm_bc+gs.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="string_pm_kr" Source="string_pm_kr\string_pm_kr.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_kr\string_pm_kr.vcproj'.">
+</Event><Event ErrorLevel="1" Project="string_pm_kr" Source="string_pm_kr\string_pm_kr.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="string_pm_kr" Source="string_pm_kr\string_pm_kr.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\string_pm_kr\string_pm_kr.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="string_pm_kr" Source="string_pm_kr\string_pm_kr.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BTree" Source="btree\BTree.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\btree\BTree.vcproj'.">
+</Event><Event ErrorLevel="1" Project="BTree" Source="btree\BTree.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="BTree" Source="btree\BTree.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\btree\BTree.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="BTree" Source="btree\BTree.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="median1" Source="median1\median1.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\median1\median1.vcproj'.">
+</Event><Event ErrorLevel="1" Project="median1" Source="median1\median1.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="median1" Source="median1\median1.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\median1\median1.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="median1" Source="median1\median1.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="median2" Source="median2\median2.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\median2\median2.vcproj'.">
+</Event><Event ErrorLevel="1" Project="median2" Source="median2\median2.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="median2" Source="median2\median2.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\median2\median2.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="median2" Source="median2\median2.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="graphMatrix" Source="graphmatrix\graphMatrix.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\graphmatrix\graphMatrix.vcproj'.">
+</Event><Event ErrorLevel="1" Project="graphMatrix" Source="graphmatrix\graphMatrix.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="graphMatrix" Source="graphmatrix\graphMatrix.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\graphmatrix\graphMatrix.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="graphMatrix" Source="graphmatrix\graphMatrix.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="countones" Source="countones\countones.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\countones\countones.vcproj'.">
+</Event><Event ErrorLevel="1" Project="countones" Source="countones\countones.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="countones" Source="countones\countones.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\countones\countones.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="countones" Source="countones\countones.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="conversion_recursive" Source="conversion_recursive\conversion_recursive.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\conversion_recursive\conversion_recursive.vcproj'.">
+</Event><Event ErrorLevel="1" Project="conversion_recursive" Source="conversion_recursive\conversion_recursive.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="conversion_recursive" Source="conversion_recursive\conversion_recursive.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\conversion_recursive\conversion_recursive.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="conversion_recursive" Source="conversion_recursive\conversion_recursive.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="gcd" Source="gcd\gcd.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\gcd\gcd.vcproj'.">
+</Event><Event ErrorLevel="1" Project="gcd" Source="gcd\gcd.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="gcd" Source="gcd\gcd.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\gcd\gcd.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="gcd" Source="gcd\gcd.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Fibonacci" Source="Fibonacci\Fibonacci.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Fibonacci\Fibonacci.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Fibonacci" Source="Fibonacci\Fibonacci.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Fibonacci" Source="Fibonacci\Fibonacci.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Fibonacci\Fibonacci.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Fibonacci" Source="Fibonacci\Fibonacci.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="factorial" Source="factorial\factorial.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\factorial\factorial.vcproj'.">
+</Event><Event ErrorLevel="1" Project="factorial" Source="factorial\factorial.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="factorial" Source="factorial\factorial.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\factorial\factorial.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="factorial" Source="factorial\factorial.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="simu" Source="simu\simu.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\simu\simu.vcproj'.">
+</Event><Event ErrorLevel="1" Project="simu" Source="simu\simu.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="simu" Source="simu\simu.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\simu\simu.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="simu" Source="simu\simu.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="majority" Source="majority\majority.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\majority\majority.vcproj'.">
+</Event><Event ErrorLevel="1" Project="majority" Source="majority\majority.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="majority" Source="majority\majority.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\majority\majority.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="majority" Source="majority\majority.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="selection" Source="selection\selection.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\selection\selection.vcproj'.">
+</Event><Event ErrorLevel="1" Project="selection" Source="selection\selection.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="selection" Source="selection\selection.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\selection\selection.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="selection" Source="selection\selection.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="bubblesort" Source="bubblesort\bubblesort.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bubblesort\bubblesort.vcproj'.">
+</Event><Event ErrorLevel="1" Project="bubblesort" Source="bubblesort\bubblesort.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="bubblesort" Source="bubblesort\bubblesort.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bubblesort\bubblesort.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="bubblesort" Source="bubblesort\bubblesort.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="conversion" Source="conversion\conversion.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\conversion\conversion.vcproj'.">
+</Event><Event ErrorLevel="1" Project="conversion" Source="conversion\conversion.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="conversion" Source="conversion\conversion.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\conversion\conversion.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="conversion" Source="conversion\conversion.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="daxue" Source="daxue\daxue.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\daxue\daxue.vcproj'.">
+</Event><Event ErrorLevel="1" Project="daxue" Source="daxue\daxue.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="daxue" Source="daxue\daxue.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\daxue\daxue.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="daxue" Source="daxue\daxue.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="hanoi" Source="hanoi\hanoi.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\hanoi\hanoi.vcproj'.">
+</Event><Event ErrorLevel="1" Project="hanoi" Source="hanoi\hanoi.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="hanoi" Source="hanoi\hanoi.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\hanoi\hanoi.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="hanoi" Source="hanoi\hanoi.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="laby" Source="laby\laby.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\laby\laby.vcproj'.">
+</Event><Event ErrorLevel="1" Project="laby" Source="laby\laby.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="laby" Source="laby\laby.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\laby\laby.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="laby" Source="laby\laby.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="shiftK" Source="shiftk\shiftK.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\shiftk\shiftK.vcproj'.">
+</Event><Event ErrorLevel="1" Project="shiftK" Source="shiftk\shiftK.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="shiftK" Source="shiftk\shiftK.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\shiftk\shiftK.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="shiftK" Source="shiftk\shiftK.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="list" Source="list\list.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\list\list.vcproj'.">
+</Event><Event ErrorLevel="1" Project="list" Source="list\list.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="list" Source="list\list.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\list\list.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="list" Source="list\list.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="bitmap" Source="bitmap\bitmap.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bitmap\bitmap.vcproj'.">
+</Event><Event ErrorLevel="1" Project="bitmap" Source="bitmap\bitmap.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="bitmap" Source="bitmap\bitmap.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\bitmap\bitmap.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="bitmap" Source="bitmap\bitmap.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Bitmap_set_only" Source="Bitmap_set_only\Bitmap_set_only.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Bitmap_set_only\Bitmap_set_only.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Bitmap_set_only" Source="Bitmap_set_only\Bitmap_set_only.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Bitmap_set_only" Source="Bitmap_set_only\Bitmap_set_only.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\Bitmap_set_only\Bitmap_set_only.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Bitmap_set_only" Source="Bitmap_set_only\Bitmap_set_only.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="cursor_list" Source="cursor_list\cursor_list.vcproj" Description="Converting project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\cursor_list\cursor_list.vcproj'.">
+</Event><Event ErrorLevel="1" Project="cursor_list" Source="cursor_list\cursor_list.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="cursor_list" Source="cursor_list\cursor_list.vcproj" Description="Done converting to new project file 'C:\Users\Miko_Song\Desktop\dsa\dsa\src\cursor_list\cursor_list.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="cursor_list" Source="cursor_list\cursor_list.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="dsacpp.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="dsacpp.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,42 @@
+1. Guess the number
+# generate a random integer from 1 to 100
+# ask the user to enter a guess
+# if the guess is too high, print "Too high!"
+# if the guess is too low, print "Too low!"
+# if the guess is right, print "Right!"
+
+2. File context statistics
+
+# Write a program that takes the file wcfile (in the attached zip file), and prints out:
+
+# - Number of lines (including blank lines)
+# - Number of words (i.e., things with spaces between them)
+# - Number of characters (including whitespace)
+# - Number of different words
+
+3. Contacts
+
+The contacts include the following elements, like 
+# family name: Gu	
+# given name: Congcong	
+# phone number: 18621958376	
+# e-mail address: susie.gu@ericsson.com
+
+write a program to implement the following requirements.
+# q -- quit from the program
+# a -- add a new person to the system
+# l -- list all of the people
+# f -- find all people with a search string in their name
+#      or e-mail address
+# w -- write information to a disk file
+# r -- read information to a disk file
+
+
+4. XML parsing
+define a function xml in order to convert the input to the xml format string output. just like: 
+#print xml('p')        #     => <p></p>
+#print xml('p', 'bar')  #     => <p>bar</p>
+#print xml('p', 'bar', a=1)       #  => <p a="1">bar</p>
+#print xml('p', 'bar', a=1, b=2)   #  => <p a="1" b="2">bar</p>
+#print xml('p', xml('b','text',a=1,b=2))  #  => <p><b a=1 b=2 >text</b></p>
+

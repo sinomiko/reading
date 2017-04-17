@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Calculator">
+</Property><Property Name="解决方案文件" Value="E:\快盘1\Materials of master's section\C++\跟我一起学C++26-88PPt\ppt&amp;src39-88\39-88cpp_program\57cpp\Calculator\Calculator.sln">
+</Property><Property Name="Date" Value="2014年4月24日">
+</Property><Property Name="Time" Value="22:10">
+</Property></Properties><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.vcproj" Description="Converting project file 'E:\快盘1\Materials of master's section\C++\跟我一起学C++26-88PPt\ppt&amp;src39-88\39-88cpp_program\57cpp\Calculator\Calculator\Calculator.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Calculator" Source="Calculator\Calculator.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.vcproj" Description="Done converting to new project file 'E:\快盘1\Materials of master's section\C++\跟我一起学C++26-88PPt\ppt&amp;src39-88\39-88cpp_program\57cpp\Calculator\Calculator\Calculator.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Calculator" Source="Calculator\Calculator.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CalculatorTest" Source="CalculatorTest\CalculatorTest.vcproj" Description="Converting project file 'E:\快盘1\Materials of master's section\C++\跟我一起学C++26-88PPt\ppt&amp;src39-88\39-88cpp_program\57cpp\Calculator\CalculatorTest\CalculatorTest.vcproj'.">
+</Event><Event ErrorLevel="1" Project="CalculatorTest" Source="CalculatorTest\CalculatorTest.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="CalculatorTest" Source="CalculatorTest\CalculatorTest.vcproj" Description="Done converting to new project file 'E:\快盘1\Materials of master's section\C++\跟我一起学C++26-88PPt\ppt&amp;src39-88\39-88cpp_program\57cpp\Calculator\CalculatorTest\CalculatorTest.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="CalculatorTest" Source="CalculatorTest\CalculatorTest.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Calculator.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="Calculator.sln" Description="Converted">
+</Event></UpgradeLog>

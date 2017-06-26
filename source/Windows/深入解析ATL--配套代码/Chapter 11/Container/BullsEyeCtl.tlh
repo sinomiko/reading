@@ -1,0 +1,117 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (c4130c78).
+//
+// BullsEyeCtl.tlh
+//
+// C++ source equivalent of Win32 type library D:\ATLBook\src\atlinternals\Debug\BullsEyeCtl.dll
+// compiler-generated file created 01/05/99 at 22:12:25 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("19ff9872-36ed-11d2-ac05-00a0c9c8e50d"))
+/* dispinterface */ _IBullsEyeEvents;
+struct /* coclass */ BullsEye;
+struct __declspec(uuid("7dc59cc4-36c0-11d2-ac05-00a0c9c8e50d"))
+/* dual interface */ IBullsEye;
+struct /* coclass */ BullsEyePropPage;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IBullsEyeEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IBullsEye, __uuidof(IBullsEye));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("19ff9872-36ed-11d2-ac05-00a0c9c8e50d"))
+_IBullsEyeEvents : IDispatch
+{};
+
+struct __declspec(uuid("7dc59cc5-36c0-11d2-ac05-00a0c9c8e50d"))
+BullsEye;
+    // [ default ] interface IBullsEye
+    // [ default, source ] dispinterface _IBullsEyeEvents
+
+struct __declspec(uuid("7dc59cc4-36c0-11d2-ac05-00a0c9c8e50d"))
+IBullsEye : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall put_BackStyle (
+        long style ) = 0;
+    virtual HRESULT __stdcall get_BackStyle (
+        long * style ) = 0;
+    virtual HRESULT __stdcall put_ForeColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_ForeColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall put_Enabled (
+        VARIANT_BOOL pbool ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        VARIANT_BOOL * pbool ) = 0;
+    virtual HRESULT __stdcall get_AlternateColor (
+        OLE_COLOR * pVal ) = 0;
+    virtual HRESULT __stdcall put_AlternateColor (
+        OLE_COLOR pVal ) = 0;
+    virtual HRESULT __stdcall get_Beep (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_Beep (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_CenterColor (
+        OLE_COLOR * pVal ) = 0;
+    virtual HRESULT __stdcall put_CenterColor (
+        OLE_COLOR pVal ) = 0;
+    virtual HRESULT __stdcall get_RingCount (
+        short * pVal ) = 0;
+    virtual HRESULT __stdcall put_RingCount (
+        short pVal ) = 0;
+    virtual HRESULT __stdcall get_ringValue (
+        short sRingNumber,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ringValue (
+        short sRingNumber,
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Application (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Parent (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall Refresh ( ) = 0;
+    virtual HRESULT __stdcall DoClick ( ) = 0;
+    virtual HRESULT __stdcall AboutBox ( ) = 0;
+};
+
+struct __declspec(uuid("7dc59cc8-36c0-11d2-ac05-00a0c9c8e50d"))
+BullsEyePropPage;
+    // [ default ] interface IUnknown
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_BullsEyeLib =
+    {0xc8b7d8c8,0x8d62,0x11d2,{0xbd,0x9c,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) DIID__IBullsEyeEvents =
+    {0x19ff9872,0x36ed,0x11d2,{0xac,0x05,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) CLSID_BullsEye =
+    {0x7dc59cc5,0x36c0,0x11d2,{0xac,0x05,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) IID_IBullsEye =
+    {0x7dc59cc4,0x36c0,0x11d2,{0xac,0x05,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) CLSID_BullsEyePropPage =
+    {0x7dc59cc8,0x36c0,0x11d2,{0xac,0x05,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+
+#pragma pack(pop)

@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BullsEyeCtl - Win32 Release MinDependency--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"ReleaseMinDependency/BullsEyeCtl.res" /d "NDEBUG" "C:\ATL Internals\BullsEyeCtl\BullsEyeCtl.rc"" 
+Creating temporary file "E:\DOCUME~1\brent\LOCALS~1\Temp\RSP298.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_STATIC_REGISTRY" /D "_ATL_MIN_CRT" /FR"ReleaseMinDependency/" /Fp"ReleaseMinDependency/BullsEyeCtl.pch" /Yu"stdafx.h" /Fo"ReleaseMinDependency/" /Fd"ReleaseMinDependency/" /FD /c 
+"C:\ATL Internals\BullsEyeCtl\AboutDlg.cpp"
+"C:\ATL Internals\BullsEyeCtl\BugFixes.cpp"
+"C:\ATL Internals\BullsEyeCtl\BullsEye.cpp"
+"C:\ATL Internals\BullsEyeCtl\BullsEyeCtl.cpp"
+"C:\ATL Internals\BullsEyeCtl\BullsEyePropPage.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\brent\LOCALS~1\Temp\RSP298.tmp" 
+Creating temporary file "E:\DOCUME~1\brent\LOCALS~1\Temp\RSP299.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_STATIC_REGISTRY" /D "_ATL_MIN_CRT" /FR"ReleaseMinDependency/" /Fp"ReleaseMinDependency/BullsEyeCtl.pch" /Yc"stdafx.h" /Fo"ReleaseMinDependency/" /Fd"ReleaseMinDependency/" /FD /c 
+"C:\ATL Internals\BullsEyeCtl\StdAfx.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\brent\LOCALS~1\Temp\RSP299.tmp" 
+Creating temporary file "E:\DOCUME~1\brent\LOCALS~1\Temp\RSP29A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib version.lib winmm.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"ReleaseMinDependency/BullsEyeCtl.pdb" /machine:I386 /def:".\BullsEyeCtl.def" /out:"ReleaseMinDependency/BullsEyeCtl.dll" /implib:"ReleaseMinDependency/BullsEyeCtl.lib" 
+".\ReleaseMinDependency\AboutDlg.obj"
+".\ReleaseMinDependency\BugFixes.obj"
+".\ReleaseMinDependency\BullsEye.obj"
+".\ReleaseMinDependency\BullsEyeCtl.obj"
+".\ReleaseMinDependency\BullsEyePropPage.obj"
+".\ReleaseMinDependency\StdAfx.obj"
+".\ReleaseMinDependency\BullsEyeCtl.res"
+]
+Creating command line "link.exe @E:\DOCUME~1\brent\LOCALS~1\Temp\RSP29A.tmp"
+Creating temporary file "E:\DOCUME~1\brent\LOCALS~1\Temp\RSP29B.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\ReleaseMinDependency\BullsEyeCtl.dll"
+echo regsvr32 exec. time > ".\ReleaseMinDependency\regsvr32.trg"
+]
+Creating command line "E:\DOCUME~1\brent\LOCALS~1\Temp\RSP29B.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AboutDlg.cpp
+BugFixes.cpp
+BullsEye.cpp
+BullsEyeCtl.cpp
+BullsEyePropPage.cpp
+Generating Code...
+Linking...
+   Creating library ReleaseMinDependency/BullsEyeCtl.lib and object ReleaseMinDependency/BullsEyeCtl.exp
+<h3>Output Window</h3>
+Performing registration
+RegSvr32: DllRegisterServer in .\ReleaseMinDependency\BullsEyeCtl.dll succeeded.
+
+Creating temporary file "E:\DOCUME~1\brent\LOCALS~1\Temp\RSP29F.tmp" with contents
+[
+/nologo /o"ReleaseMinDependency/BullsEyeCtl.bsc" 
+".\ReleaseMinDependency\StdAfx.sbr"
+".\ReleaseMinDependency\AboutDlg.sbr"
+".\ReleaseMinDependency\BugFixes.sbr"
+".\ReleaseMinDependency\BullsEye.sbr"
+".\ReleaseMinDependency\BullsEyeCtl.sbr"
+".\ReleaseMinDependency\BullsEyePropPage.sbr"]
+Creating command line "bscmake.exe @E:\DOCUME~1\brent\LOCALS~1\Temp\RSP29F.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+BullsEyeCtl.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

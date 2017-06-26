@@ -1,0 +1,25 @@
+HKCR
+{
+	This.SmartProxy.1 = s 'SmartProxy Class'
+	{
+		CLSID = s '{CB693B5F-80E2-11D2-987D-00600823CFFB}'
+	}
+	This.SmartProxy = s 'SmartProxy Class'
+	{
+		CLSID = s '{CB693B5F-80E2-11D2-987D-00600823CFFB}'
+		CurVer = s 'This.SmartProxy.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {CB693B5F-80E2-11D2-987D-00600823CFFB} = s 'SmartProxy Class'
+		{
+			ProgID = s 'This.SmartProxy.1'
+			VersionIndependentProgID = s 'This.SmartProxy'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CB693B4A-80E2-11D2-987D-00600823CFFB}'
+		}
+	}
+}

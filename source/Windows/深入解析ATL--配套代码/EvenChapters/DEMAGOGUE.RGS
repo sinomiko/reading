@@ -1,0 +1,27 @@
+HKCR
+{
+	ATLInternals.Demagogue.1 = s 'Demagogue Class'
+	{
+		CLSID = s '{95CD3731-FC5C-11D1-8CC3-00A0C9C8E50D}'
+	}
+	ATLInternals.Demagogue = s 'Demagogue Class'
+	{
+		CLSID = s '{95CD3731-FC5C-11D1-8CC3-00A0C9C8E50D}'
+		CurVer = s 'ATLInternals.Demagogue.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {95CD3731-FC5C-11D1-8CC3-00A0C9C8E50D} = s 'Demagogue Class'
+		{
+            DateInstalled = s '%INSTALLDATE%'
+			ProgID = s 'ATLInternals.Demagogue.1'
+			VersionIndependentProgID = s 'ATLInternals.Demagogue'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{95CD3721-FC5C-11D1-8CC3-00A0C9C8E50D}'
+		}
+	}
+}

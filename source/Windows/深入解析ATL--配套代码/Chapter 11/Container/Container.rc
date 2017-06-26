@@ -1,0 +1,227 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_CONTAINER ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "/",            ID_HELP_ABOUT,          ASCII,  ALT, NOINVERT
+    "?",            ID_HELP_ABOUT,          ASCII,  ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 230, 75
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About Container"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_CONTAINER,IDI_CONTAINER,14,9,20,20
+    LTEXT           "Container Version 1.0",IDC_STATIC,49,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+IDD_BULLSEYE DIALOG DISCARDABLE  0, 0, 342, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BullsEye"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_BULLSEYE,"{7DC59CC5-36C0-11D2-AC05-00A0C9C8E50D}",
+                    0x0,7,7,269,224
+    LTEXT           "&Score:",IDC_STATIC,289,7,22,8
+    CTEXT           "Static",IDC_SCORE,278,18,46,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "Close",IDCANCEL,278,107,50,14
+    PUSHBUTTON      "&More Rings",ID_MORE_RINGS,278,40,50,14
+    PUSHBUTTON      "&Fewer Rings",ID_FEWER_RINGS,278,57,50,14
+END
+
+IDD_DARTBOARD DIALOG DISCARDABLE  0, 0, 175, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dart Board"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DARTBOARD1,"{0700D3F4-913F-11D2-9887-00600823CFFB}",
+                    WS_TABSTOP,7,7,161,166
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CONTAINER           ICON    DISCARDABLE     "res\\Container.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTAINER MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New...\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Insert Control...",          ID_EDIT_INSERTCONTROL
+        MENUITEM SEPARATOR
+        MENUITEM "Control &Properties...",      ID_EDIT_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Show &BullsEye...",           ID_EDIT_SHOWBULLSEYE
+        MENUITEM "Show &Dart Board...",         ID_EDIT_SHOW_DARTBOARD
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Container...\tAtl-?",  ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_BULLSEYE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_DARTBOARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BULLSEYE DLGINIT
+BEGIN
+    IDC_BULLSEYE, 0x376, 154, 0
+0x0026, 0x0000, 0x007b, 0x0039, 0x0035, 0x0036, 0x0046, 0x0043, 0x0032, 
+0x0043, 0x0032, 0x002d, 0x0035, 0x0041, 0x0046, 0x0038, 0x002d, 0x0031, 
+0x0031, 0x0044, 0x0032, 0x002d, 0x0042, 0x0044, 0x0030, 0x0035, 0x002d, 
+0x0030, 0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0043, 0x0038, 0x0045, 
+0x0035, 0x0030, 0x0044, 0x007d, 0x0300, 0x0000, 0x29c1, 0x0000, 0x259f, 
+0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x0002, 
+0x0005, 0x0013, 0x0000, 0x0000, 0x0013, 0xc0c0, 0x00c0, 0x0013, 0x00ff, 
+0x0000, 0x0013, 0x0000, 0x0080, 0x0200, 0x0000, 0x0100, 0x0000, 0x0080, 
+0x0000, 0x0040, 0x0000, 0x0020, 0x0000, 
+    0
+END
+
+IDD_DARTBOARD DLGINIT
+BEGIN
+    IDC_DARTBOARD1, 0x376, 16, 0
+0x0000, 0x0000, 0x0300, 0x0000, 0x1903, 0x0000, 0x1be8, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Container"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

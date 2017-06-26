@@ -1,0 +1,22 @@
+HKCR
+{
+	ATLInternals.SoapBox.1 = s 'SoapBox Class'
+	{
+		CLSID = s '{95CD372E-FC5C-11D1-8CC3-00A0C9C8E50D}'
+	}
+	ATLInternals.SoapBox = s 'SoapBox Class'
+	{
+		CLSID = s '{95CD372E-FC5C-11D1-8CC3-00A0C9C8E50D}'
+		CurVer = s 'ATLInternals.SoapBox.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {95CD372E-FC5C-11D1-8CC3-00A0C9C8E50D} = s 'SoapBox Class'
+		{
+			ProgID = s 'ATLInternals.SoapBox.1'
+			VersionIndependentProgID = s 'ATLInternals.SoapBox'
+			ForceRemove 'Programmable'
+			'TypeLib' = s '{95CD3721-FC5C-11D1-8CC3-00A0C9C8E50D}'
+		}
+	}
+}

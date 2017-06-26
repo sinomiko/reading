@@ -1,0 +1,73 @@
+// this.idl : IDL source for this.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (this.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+    
+    interface IBalloon;
+
+	[
+		object,
+		uuid(CB693B56-80E2-11D2-987D-00600823CFFB),
+	
+		helpstring("IBalloonMan Interface"),
+		pointer_default(unique)
+	]
+	interface IBalloonMan : IUnknown
+	{
+		[helpstring("method CreateBalloon")] HRESULT CreateBalloon(long rgbColor, IBalloon** ppBalloon);
+	};
+	[
+		object,
+		uuid(CB693B58-80E2-11D2-987D-00600823CFFB),
+	
+		helpstring("IBalloon Interface"),
+		pointer_default(unique)
+	]
+	interface IBalloon : IUnknown
+	{
+		[propget, helpstring("property Color")] HRESULT Color([out, retval] long *pVal);
+	};
+	[
+		object,
+		uuid(CB693B5E-80E2-11D2-987D-00600823CFFB),
+	
+		helpstring("ISmartProxy Interface"),
+		pointer_default(unique)
+	]
+	interface ISmartProxy : IUnknown
+	{
+	};
+
+[
+	uuid(CB693B4A-80E2-11D2-987D-00600823CFFB),
+	version(1.0),
+	helpstring("this 1.0 Type Library")
+]
+library THISLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+    interface IBalloon;
+
+	[
+		uuid(CB693B57-80E2-11D2-987D-00600823CFFB),
+		helpstring("BalloonMan Class")
+	]
+	coclass BalloonMan
+	{
+		[default] interface IBalloonMan;
+	};
+	[
+		uuid(CB693B5F-80E2-11D2-987D-00600823CFFB),
+		helpstring("SmartProxy Class")
+	]
+	coclass SmartProxy
+	{
+		[default] interface ISmartProxy;
+	};
+};

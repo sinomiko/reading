@@ -1,0 +1,46 @@
+// Birds.idl : IDL source for Birds.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Birds.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(941666C4-778E-11D1-982D-00600823CFFB),
+		dual,
+		helpstring("IPenguin Interface"),
+		pointer_default(unique)
+	]
+	interface IPenguin : IDispatch
+	{
+		[propget, id(1), helpstring("property Wingspan")] HRESULT Wingspan([out, retval] long *pVal);
+		[propput, id(1), helpstring("property Wingspan")] HRESULT Wingspan([in] long newVal);
+		[propget, id(2), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property Name")] HRESULT Name([in] BSTR newVal);
+		[id(3), helpstring("method Fly")] HRESULT Fly();
+	};
+
+[
+	uuid(941666B8-778E-11D1-982D-00600823CFFB),
+	version(1.0),
+	helpstring("Birds 1.0 Type Library")
+]
+library BIRDSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(941666C5-778E-11D1-982D-00600823CFFB),
+		helpstring("Penguin Class")
+	]
+	coclass Penguin
+	{
+		[default] interface IPenguin;
+	};
+};

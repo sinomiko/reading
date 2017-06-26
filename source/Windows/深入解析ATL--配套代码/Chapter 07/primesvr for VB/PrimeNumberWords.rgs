@@ -1,0 +1,24 @@
+HKCR
+{
+	Primesvr.PrimeNumberWords.1 = s 'PrimeNumberWords Class'
+	{
+		CLSID = s '{56CD9687-3398-11D2-9848-00600823CFFB}'
+	}
+	Primesvr.PrimeNumberWords = s 'PrimeNumberWords Class'
+	{
+		CLSID = s '{56CD9687-3398-11D2-9848-00600823CFFB}'
+		CurVer = s 'Primesvr.PrimeNumberWords.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {56CD9687-3398-11D2-9848-00600823CFFB} = s 'PrimeNumberWords Class'
+		{
+			ProgID = s 'Primesvr.PrimeNumberWords.1'
+			VersionIndependentProgID = s 'Primesvr.PrimeNumberWords'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{E64EDDD2-2B2C-11D2-983C-00600823CFFB}'
+			'TypeLib' = s '{E64EDDD1-2B2C-11D2-983C-00600823CFFB}'
+		}
+	}
+}

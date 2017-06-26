@@ -1,0 +1,23 @@
+HKCR
+{
+	Primesvr4VB.PrimeNumbers.1 = s 'PrimeNumbers Class for VB'
+	{
+		CLSID = s '{E64EDDDE-2B2C-11D2-983C-00600823CFFB}'
+	}
+	Primesvr4VB.PrimeNumbers = s 'PrimeNumbers Class for VB'
+	{
+		CLSID = s '{E64EDDDE-2B2C-11D2-983C-00600823CFFB}'
+		CurVer = s 'Primesvr4VB.PrimeNumbers.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E64EDDDE-2B2C-11D2-983C-00600823CFFB} = s 'PrimeNumbers Class for VB'
+		{
+			ProgID = s 'Primesvr4VB.PrimeNumbers.1'
+			VersionIndependentProgID = s 'Primesvr4VB.PrimeNumbers'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{E64EDDD2-2B2C-11D2-983C-00600823CFFB}'
+			'TypeLib' = s '{E64EDDD1-2B2C-11D2-983C-00600823CFFB}'
+		}
+	}
+}

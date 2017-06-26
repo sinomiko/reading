@@ -1,0 +1,58 @@
+<object classid="clsid:DEC22F37-DD78-11D1-97FD-006008243C8C"
+        id=objPiCalculator>
+        <param name=digits value=50>
+</object>
+
+<input type=button name=cmdCalcPi value="Pi to 50 Digits:"> <span id=spanPi>unknown</span>
+<p>Distribution of first 50 digits in pi:
+<table border cellpadding=4>
+<tr><td>Digit</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>Total</td></tr>
+<tr><td>Frequency</td>
+<td><span id=span0>0</span></td>
+<td><span id=span1>0</span></td>
+<td><span id=span2>0</span></td>
+<td><span id=span3>0</span></td>
+<td><span id=span4>0</span></td>
+<td><span id=span5>0</span></td>
+<td><span id=span6>0</span></td>
+<td><span id=span7>0</span></td>
+<td><span id=span8>0</span></td>
+<td><span id=span9>0</span></td>
+<td><span id=spanTotal>0</span></td></tr>
+</table>
+
+<script language=vbscript>
+  ' Handle button click event
+  sub cmdCalcPi_onClick
+    spanPi.innerText = objPiCalculator.CalcPi
+  end sub
+
+  ' Handle calculator digit event
+  sub objPiCalculator_onDigit(index, digit)
+    select case digit
+    case 0: span0.innerText = span0.innerText + 1
+    case 1: span1.innerText = span1.innerText + 1
+    case 2: span2.innerText = span2.innerText + 1
+    case 3: span3.innerText = span3.innerText + 1
+    case 4: span4.innerText = span4.innerText + 1
+    case 5: span5.innerText = span5.innerText + 1
+    case 6: span6.innerText = span6.innerText + 1
+    case 7: span7.innerText = span7.innerText + 1
+    case 8: span8.innerText = span8.innerText + 1
+    case 9: span9.innerText = span9.innerText + 1
+    end select
+
+    spanTotal.innerText = spanTotal.innerText + 1
+  end sub
+</script>

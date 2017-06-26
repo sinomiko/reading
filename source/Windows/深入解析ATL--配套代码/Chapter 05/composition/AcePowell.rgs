@@ -1,0 +1,24 @@
+HKCR
+{
+	AcePowell.AcePowell.1 = s 'AcePowell Class'
+	{
+		CLSID = s '{ADF259F8-5967-11D1-9687-00600819B080}'
+	}
+	AcePowell.AcePowell = s 'AcePowell Class'
+	{
+		CurVer = s 'AcePowell.AcePowell.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {ADF259F8-5967-11D1-9687-00600819B080} = s 'AcePowell Class'
+		{
+			ProgID = s 'AcePowell.AcePowell.1'
+			VersionIndependentProgID = s 'AcePowell.AcePowell'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

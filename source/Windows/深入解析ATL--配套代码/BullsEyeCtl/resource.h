@@ -1,0 +1,85 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by BullsEyeCtl.rc
+//
+#define IDS_PROJNAME 100
+
+#define IDR_BULLSEYE                    106
+#define IDS_TITLEBullsEyePropPage       107
+#define IDS_HELPFILEBullsEyePropPage    108
+#define IDS_DOCSTRINGBullsEyePropPage   109
+#define IDR_BULLSEYEPROPPAGE            110
+#define IDD_BULLSEYEPROPPAGE            111
+#define IDS_PLATFORM_WIN32_NT           110
+#define IDS_PLATFORM_WIN32_NTAS         111
+#define IDD_ABOUTDLG                    112
+#define IDS_PLATFORM_WIN32_NTW          112
+#define IDS_PLATFORM_WIN32_NTS          113
+#define IDS_PLATFORM_WIN32s             114
+#define IDS_PLATFORM_WIN32_WINDOWS      115
+#define IDS_PLATFORM_WIN32_WINDOWS95    115
+#define IDS_PLATFORM_UNKNOWN            116
+#define IDS_PROCESSOR_NOREV_INTEL_PENTIUMPRO 117
+#define IDS_PROCESSOR_NOREV_INTEL_PENTIUMII 118
+#define IDS_PLATFORM_WIN32_WINDOWS98    119
+#define IDS_PROCESSOR_ARCHITECTURE_UNKNOWN 120
+#define IDS_PROCESSOR_ARCHITECTURE_INTEL_386_486 121
+#define IDS_PROCESSOR_ARCHITECTURE_INTEL_PENTIUM 122
+#define IDS_PROCESSOR_ARCHITECTURE_ALPHA 123
+#define IDS_PROCESSOR_ARCHITECTURE_MIPS 124
+#define IDS_PROCESSOR_ARCHITECTURE_PPC  125
+#define IDS_PROCESSOR_LEVEL_INTEL_UNKNOWN 126
+#define IDS_PROCESSOR_LEVEL_ALPHA_UNKNOWN 127
+#define IDS_PROCESSOR_LEVEL_MIPS_UNKNOWN 128
+#define IDS_PROCESSOR_LEVEL_PPC_UNKNOWN 129
+#define IDS_PROCESSOR_NOREV_INTEL_386   130
+#define IDS_PROCESSOR_NOREV_INTEL_486   131
+#define IDS_PROCESSOR_NOREV_INTEL_PENTIUM 132
+#define IDS_PROCESSOR_NOREV_MIPS_R4000  133
+#define IDS_PROCESSOR_NOREV_ALPHA_21064 134
+#define IDS_PROCESSOR_ARCHITECTURE_SHX  135
+#define IDS_PROCESSOR_ARCHITECTURE_ARM  136
+#define IDS_PROCESSOR_ARCHITECTURE_IA64 137
+#define IDS_PROCESSOR_ARCHITECTURE_ALPHA64 138
+
+#define MAX_RESOURCESTRING              255
+#define IDS_INVALIDRINGCOUNT            512
+#define IDS_INVALIDRINGLESSTHANONE      513
+#define IDS_INVALIDRINGNUMBER           514
+#define IDC_ABOUT_COMPANY               1000
+#define IDC_ABOUT_FILEDESC              1001
+#define IDC_ABOUT_COPYRIGHT             1002
+#define IDC_ABOUT_PRODVER               1003
+#define IDC_ABOUT_OSVERSION             1004
+#define IDC_ABOUT_TRADEMARK             1005
+#define IDC_ABOUT_PROCESSORVERSION      1006
+#define IDC_ABOUT_LABEL                 1007
+#define IDC_ABOUT_FILEDESCRIPTION       1008
+#define IDC_ABOUT_VERSION               1009
+#define IDC_ABOUT_LEGALCOPYRIGHT        1010
+#define IDC_ABOUT_LEGALTRADEMARKS       1011
+#define IDC_ABOUT_COMMENTS              1012
+
+#define IDS_COMDROPTARGET_DESC          139
+#define IDC_TOOLBAR                     140
+#define IDS_BULLSEYEDROPSOURCE_DESC     142
+#define IDI_BULLSEYE                    202
+#define IDC_SPIN1                       202
+#define IDB_BULLSEYE                    203
+#define IDC_RINGCOUNT                   203
+#define IDR_ARROW                       204
+#define IDC_BEEP                        204
+#define IDC_CHECK1                      205
+#define IDC_ENABLED                     205
+#define IDC_TRANSPARENT                 206
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        201
+#define _APS_NEXT_COMMAND_VALUE         32768
+#define _APS_NEXT_CONTROL_VALUE         201
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

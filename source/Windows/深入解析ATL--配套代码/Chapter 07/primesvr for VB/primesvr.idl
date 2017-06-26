@@ -1,0 +1,79 @@
+// primesvr.idl : IDL source for primesvr.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (primesvr.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+    dual,
+		uuid(E64EDDDD-2B2C-11D2-983C-00600823CFFB),
+		helpstring("IPrimeNumbers Interface for VB"),
+		pointer_default(unique)
+	]
+	interface IPrimeNumbers : IDispatch
+	{
+    HRESULT CalcPrimes([in] long min, [in] long max);
+    
+    [propget]
+    HRESULT Count([out, retval] long* pnCount);
+
+    [propget, id(DISPID_VALUE)]
+    HRESULT Item([in] long n, [out, retval] long* pnPrime);
+
+    [propget, id(DISPID_NEWENUM)]
+    HRESULT _NewEnum([out, retval] IUnknown** ppunkEnum);
+	};
+
+    [
+        object,
+        uuid(56CD9686-3398-11D2-9848-00600823CFFB),
+        dual,
+        helpstring("IPrimeNumberWords Interface"),
+        pointer_default(unique)
+    ]
+    interface IPrimeNumberWords : IDispatch
+    {
+        HRESULT CalcPrimes([in] long min, [in] long max);
+
+        [propget]
+        HRESULT Count([out, retval] long* pnCount);
+
+        [propget, id(DISPID_VALUE)]
+        HRESULT Item([in] long n, [out, retval] BSTR* pbstrPrimeWord);
+
+        [propget, id(DISPID_NEWENUM)]
+        HRESULT _NewEnum([out, retval] IUnknown** ppunkEnum);
+    };
+
+[
+	uuid(E64EDDD1-2B2C-11D2-983C-00600823CFFB),
+	version(1.0),
+	helpstring("primesvr 1.0 Type Library for VB")
+]
+library PRIMESVRLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(E64EDDDE-2B2C-11D2-983C-00600823CFFB),
+		helpstring("PrimeNumbers Class for VB")
+	]
+	coclass PrimeNumbers
+	{
+		[default] interface IPrimeNumbers;
+	};
+	[
+		uuid(56CD9687-3398-11D2-9848-00600823CFFB),
+		helpstring("PrimeNumberWords Class")
+	]
+	coclass PrimeNumberWords
+	{
+		[default] interface IPrimeNumberWords;
+	};
+};
+

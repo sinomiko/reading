@@ -1,0 +1,19 @@
+HKCR
+{
+    NoRemove AppID
+    {
+        {A11552A2-28DF-11d2-ABDD-00A0C9C8E50D} = s 'ATLInternals'
+        'ATLInternals.DLL'
+        {
+            val AppID = s {A11552A2-28DF-11d2-ABDD-00A0C9C8E50D}
+
+        }
+    }
+    NoRemove 'Component Categories'
+    {
+        {0D22FF22-28CC-11d2-ABDD-00A0C9C8E50D}
+        {
+            val 409 = s 'ATL Internals Example Components'
+        }
+    }
+}

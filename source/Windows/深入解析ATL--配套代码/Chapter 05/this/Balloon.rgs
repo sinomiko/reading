@@ -1,0 +1,25 @@
+HKCR
+{
+	This.Balloon.1 = s 'Balloon Class'
+	{
+		CLSID = s '{CB693B59-80E2-11D2-987D-00600823CFFB}'
+	}
+	This.Balloon = s 'Balloon Class'
+	{
+		CLSID = s '{CB693B59-80E2-11D2-987D-00600823CFFB}'
+		CurVer = s 'This.Balloon.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {CB693B59-80E2-11D2-987D-00600823CFFB} = s 'Balloon Class'
+		{
+			ProgID = s 'This.Balloon.1'
+			VersionIndependentProgID = s 'This.Balloon'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CB693B4A-80E2-11D2-987D-00600823CFFB}'
+		}
+	}
+}

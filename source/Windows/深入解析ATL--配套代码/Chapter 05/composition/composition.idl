@@ -1,0 +1,75 @@
+// composition.idl : IDL source for composition.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (composition.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(ADF259F7-5967-11D1-9687-00600819B080),
+		dual,
+		helpstring("IAcePowell Interface"),
+		pointer_default(unique)
+	]
+	interface IAcePowell : IDispatch
+	{
+	};
+
+	[
+		object,
+		uuid(2CEA24D0-5980-11d1-9687-00600819B080),
+		helpstring("IArtist Interface"),
+		pointer_default(unique)
+	]
+	interface IArtist : IUnknown
+	{
+        HRESULT Draw();
+	};
+
+	[
+		object,
+		uuid(2CEA24D1-5980-11d1-9687-00600819B080),
+		helpstring("ICowboy Interface"),
+		pointer_default(unique)
+	]
+	interface ICowboy : IUnknown
+	{
+        HRESULT Draw();
+	};
+
+	[
+		object,
+		uuid(6B438A90-59EE-11d1-9687-00600819B080),
+		helpstring("ICowboyEx Interface"),
+		pointer_default(unique)
+	]
+	interface ICowboyEx : ICowboy
+	{
+        HRESULT QuickDraw();
+	};
+
+[
+	uuid(ADF259EA-5967-11D1-9687-00600819B080),
+	version(1.0),
+	helpstring("composition 1.0 Type Library")
+]
+library COMPOSITIONLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(ADF259F8-5967-11D1-9687-00600819B080),
+		helpstring("AcePowell Class")
+	]
+	coclass AcePowell
+	{
+		[default] interface IAcePowell;
+    	interface IArtist;
+    	interface ICowboy;
+    	interface ICowboyEx;
+	};
+};

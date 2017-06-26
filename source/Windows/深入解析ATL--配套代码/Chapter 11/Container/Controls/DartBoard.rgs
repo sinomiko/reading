@@ -1,0 +1,34 @@
+HKCR
+{
+	Controls.DartBoard.1 = s 'DartBoard Class'
+	{
+		CLSID = s '{0700D3F4-913F-11D2-9887-00600823CFFB}'
+	}
+	Controls.DartBoard = s 'DartBoard Class'
+	{
+		CLSID = s '{0700D3F4-913F-11D2-9887-00600823CFFB}'
+		CurVer = s 'Controls.DartBoard.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0700D3F4-913F-11D2-9887-00600823CFFB} = s 'DartBoard Class'
+		{
+			ProgID = s 'Controls.DartBoard.1'
+			VersionIndependentProgID = s 'Controls.DartBoard'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{0700D3E7-913F-11D2-9887-00600823CFFB}'
+			'Version' = s '1.0'
+		}
+	}
+}

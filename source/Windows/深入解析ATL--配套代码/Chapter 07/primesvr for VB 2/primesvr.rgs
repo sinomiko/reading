@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{E64EDDD2-2B2C-11D2-983C-00600823CFFB} = s 'primesvr4VB'
+		'primesvr.EXE'
+		{
+			val AppID = s {E64EDDD2-2B2C-11D2-983C-00600823CFFB}
+		}
+	}
+}

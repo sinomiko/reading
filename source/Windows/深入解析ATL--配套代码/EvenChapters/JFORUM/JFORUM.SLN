@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{66355F20-A65B-11D0-BFB5-00A0C91EBFA0}") = "JForum", "JForum.vjp", "{2D9B5020-FEA4-11D1-8CC3-00A0C9C8E50D}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {2D9B5020-FEA4-11D1-8CC3-00A0C9C8E50D}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {2D9B5020-FEA4-11D1-8CC3-00A0C9C8E50D}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

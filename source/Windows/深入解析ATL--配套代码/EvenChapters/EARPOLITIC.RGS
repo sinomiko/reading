@@ -1,0 +1,26 @@
+HKCR
+{
+	ATLInternals.EarPolitic.1 = s 'EarPolitic Class'
+	{
+		CLSID = s '{95CD3734-FC5C-11D1-8CC3-00A0C9C8E50D}'
+	}
+	ATLInternals.EarPolitic = s 'EarPolitic Class'
+	{
+		CLSID = s '{95CD3734-FC5C-11D1-8CC3-00A0C9C8E50D}'
+		CurVer = s 'ATLInternals.EarPolitic.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {95CD3734-FC5C-11D1-8CC3-00A0C9C8E50D} = s 'EarPolitic Class'
+		{
+			ProgID = s 'ATLInternals.EarPolitic.1'
+			VersionIndependentProgID = s 'ATLInternals.EarPolitic'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{95CD3721-FC5C-11D1-8CC3-00A0C9C8E50D}'
+		}
+	}
+}

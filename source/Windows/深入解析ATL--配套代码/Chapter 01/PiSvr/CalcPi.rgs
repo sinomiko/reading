@@ -1,0 +1,33 @@
+HKCR
+{
+	PiSvr.CalcPi.1 = s 'CalcPi Class'
+	{
+		CLSID = s '{DEC22F37-DD78-11D1-97FD-006008243C8C}'
+	}
+	PiSvr.CalcPi = s 'CalcPi Class'
+	{
+		CLSID = s '{DEC22F37-DD78-11D1-97FD-006008243C8C}'
+		CurVer = s 'PiSvr.CalcPi.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DEC22F37-DD78-11D1-97FD-006008243C8C} = s 'CalcPi Class'
+		{
+			ProgID = s 'PiSvr.CalcPi.1'
+			VersionIndependentProgID = s 'PiSvr.CalcPi'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{C8F265D1-80E4-11D2-987D-00600823CFFB}'
+			'Version' = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,243 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8141.0 (731f97cf).
+//
+// ATLInternals.tlh
+//
+// C++ source equivalent of Win32 type library ../Debug/ATLInternals.dll
+// compiler-generated file created 07/18/98 at 12:53:45 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("95cd372f-fc5c-11d1-8cc3-00a0c9c8e50d"))
+/* dispinterface */ _IClimbableObjectEvents;
+struct __declspec(uuid("ae491faf-fbe7-11d1-8cc3-00a0c9c8e50d"))
+/* dispinterface */ _ISpeakerEvents;
+struct /* coclass */ Demagogue;
+struct __declspec(uuid("ae491fad-fbe7-11d1-8cc3-00a0c9c8e50d"))
+/* dual interface */ ISpeaker;
+struct __declspec(uuid("450d6780-fc73-11d1-8cc3-00a0c9c8e50d"))
+/* dual interface */ INamedObject;
+struct /* coclass */ EarPolitic;
+struct __declspec(uuid("ae491fb0-fbe7-11d1-8cc3-00a0c9c8e50d"))
+/* dual interface */ IListener;
+struct /* coclass */ SoapBox;
+struct __declspec(uuid("95cd372d-fc5c-11d1-8cc3-00a0c9c8e50d"))
+/* dual interface */ IClimbableObject;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IClimbableObjectEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(_ISpeakerEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ISpeaker, __uuidof(ISpeaker));
+_COM_SMARTPTR_TYPEDEF(INamedObject, __uuidof(INamedObject));
+_COM_SMARTPTR_TYPEDEF(IListener, __uuidof(IListener));
+_COM_SMARTPTR_TYPEDEF(IClimbableObject, __uuidof(IClimbableObject));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("95cd372f-fc5c-11d1-8cc3-00a0c9c8e50d"))
+_IClimbableObjectEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnClimb (
+        VARIANT_BOOL fClimbUp,
+        IUnknown * pClimber );
+};
+
+struct __declspec(uuid("ae491faf-fbe7-11d1-8cc3-00a0c9c8e50d"))
+_ISpeakerEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnWhisper (
+        _bstr_t bstrSpeach );
+    HRESULT OnTalk (
+        _bstr_t bstrSpeach );
+    HRESULT OnYell (
+        _bstr_t bstrSpeach );
+};
+
+struct __declspec(uuid("95cd3731-fc5c-11d1-8cc3-00a0c9c8e50d"))
+Demagogue;
+    // [ default ] interface IUnknown
+    // interface ISpeaker
+    // interface INamedObject
+    // [ default, source ] dispinterface _ISpeakerEvents
+
+struct __declspec(uuid("ae491fad-fbe7-11d1-8cc3-00a0c9c8e50d"))
+ISpeaker : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetVolume,put=PutVolume))
+    long Volume;
+    __declspec(property(get=GetSpeech,put=PutSpeech))
+    _bstr_t Speech;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetVolume ( );
+    void PutVolume (
+        long pVal );
+    _bstr_t GetSpeech ( );
+    void PutSpeech (
+        _bstr_t pVal );
+    HRESULT Speak ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Volume (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Volume (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Speech (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Speech (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_Speak ( ) = 0;
+};
+
+struct __declspec(uuid("450d6780-fc73-11d1-8cc3-00a0c9c8e50d"))
+INamedObject : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("95cd3734-fc5c-11d1-8cc3-00a0c9c8e50d"))
+EarPolitic;
+    // [ default ] interface IUnknown
+    // interface IListener
+
+struct __declspec(uuid("ae491fb0-fbe7-11d1-8cc3-00a0c9c8e50d"))
+IListener : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT ListenTo (
+        enum SpeakerRole role,
+        IUnknown * pSpeaker );
+    HRESULT StopListening (
+        enum SpeakerRole role );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ListenTo (
+        enum SpeakerRole role,
+        IUnknown * pSpeaker ) = 0;
+    virtual HRESULT __stdcall raw_StopListening (
+        enum SpeakerRole role ) = 0;
+};
+
+enum SpeakerRole
+{
+    Defendant = 0,
+    Plaintiff = 1
+};
+
+struct __declspec(uuid("95cd372e-fc5c-11d1-8cc3-00a0c9c8e50d"))
+SoapBox;
+    // [ default ] interface IUnknown
+    // interface IClimbableObject
+    // [ default, source ] dispinterface _IClimbableObjectEvents
+
+struct __declspec(uuid("95cd372d-fc5c-11d1-8cc3-00a0c9c8e50d"))
+IClimbableObject : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT ClimbOn (
+        IUnknown * pClimber );
+    HRESULT ClimbOff ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ClimbOn (
+        IUnknown * pClimber ) = 0;
+    virtual HRESULT __stdcall raw_ClimbOff ( ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_ATLINTERNALSLib =
+    {0x95cd3721,0xfc5c,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) DIID__IClimbableObjectEvents =
+    {0x95cd372f,0xfc5c,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) DIID__ISpeakerEvents =
+    {0xae491faf,0xfbe7,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) CLSID_Demagogue =
+    {0x95cd3731,0xfc5c,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) IID_ISpeaker =
+    {0xae491fad,0xfbe7,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) IID_INamedObject =
+    {0x450d6780,0xfc73,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) CLSID_EarPolitic =
+    {0x95cd3734,0xfc5c,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) IID_IListener =
+    {0xae491fb0,0xfbe7,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) CLSID_SoapBox =
+    {0x95cd372e,0xfc5c,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+extern "C" const GUID __declspec(selectany) IID_IClimbableObject =
+    {0x95cd372d,0xfc5c,0x11d1,{0x8c,0xc3,0x00,0xa0,0xc9,0xc8,0xe5,0x0d}};
+
+//
+// Wrapper method implementations
+//
+
+#include "ATLInternals.tli"
+
+#pragma pack(pop)

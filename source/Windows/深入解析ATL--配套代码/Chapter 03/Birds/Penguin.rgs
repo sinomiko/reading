@@ -1,0 +1,33 @@
+HKCR
+{
+	Birds.Penguin.1 = s 'Penguin Class'
+	{
+		CLSID = s '{941666C5-778E-11D1-982D-00600823CFFB}'
+	}
+	Birds.Penguin = s 'Penguin Class'
+	{
+		CLSID = s '{941666C5-778E-11D1-982D-00600823CFFB}'
+		CurVer = s 'Birds.Penguin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {941666C5-778E-11D1-982D-00600823CFFB} = s 'Penguin Class'
+		{
+			ProgID = s 'Birds.Penguin.1'
+			VersionIndependentProgID = s 'Birds.Penguin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{941666B8-778E-11D1-982D-00600823CFFB}'
+			'Version' = s '1.0'
+		}
+	}
+}

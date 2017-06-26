@@ -1,0 +1,39 @@
+// fwdshims.idl : IDL source for fwdshims.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (fwdshims.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+    [ uuid(10712B76-370D-11D2-984B-00600823CFFB) ]
+    interface ICowboy : IUnknown {
+	    HRESULT Draw();
+    };
+
+    [ uuid(10712B77-370D-11D2-984B-00600823CFFB) ]
+    interface IArtist : IUnknown {
+	    HRESULT Draw();
+    };
+
+[
+	uuid(10712B68-370D-11D2-984B-00600823CFFB),
+	version(1.0),
+	helpstring("fwdshims 1.0 Type Library")
+]
+library FWDSHIMSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(10712B75-370D-11D2-984B-00600823CFFB),
+		helpstring("AcePowell Class")
+	]
+	coclass AcePowell
+	{
+        interface IArtist;
+        interface ICowboy;
+	};
+};

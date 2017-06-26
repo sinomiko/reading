@@ -1,0 +1,13 @@
+<object classid="clsid:DEC22F37-DD78-11D1-97FD-006008243C8C"
+        id=objPiCalculator>
+        <param name=digits value=5>
+</object>
+
+<script language=vbscript>
+  ' Calculate pi
+  dim pi
+  pi = objPiCalculator.CalcPi
+
+  ' Tell the world!
+  document.write "Pi to " & objPiCalculator.digits & " digits is " & pi
+</script>

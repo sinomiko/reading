@@ -1,0 +1,15 @@
+<object classid="clsid:DEC22F37-DD78-11D1-97FD-006008243C8C"
+        id=objPiCalculator>
+</object>
+
+<script language=vbscript>
+  ' Set number of digits to calculate
+  objPiCalculator.digits = 5
+
+  ' Calculate pi
+  dim pi
+  pi = objPiCalculator.CalcPi
+
+  ' Tell the world!
+  document.write "Pi to " & objPiCalculator.digits & " digits is " & pi
+</script>

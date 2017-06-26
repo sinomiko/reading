@@ -1,0 +1,92 @@
+// Controls.idl : IDL source for Controls.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Controls.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(0700D3F3-913F-11D2-9887-00600823CFFB),
+		dual,
+		helpstring("IDartBoard Interface"),
+		pointer_default(unique)
+	]
+	interface IDartBoard : IDispatch
+	{
+		[propget, id(1), helpstring("property Score")] HRESULT Score([out, retval] long *pVal);
+		[propput, id(1), helpstring("property Score")] HRESULT Score([in] long newVal);
+		[id(2), helpstring("method ResetScore")] HRESULT ResetScore();
+	};
+
+[
+	uuid(0700D3E7-913F-11D2-9887-00600823CFFB),
+	version(1.0),
+	helpstring("Controls 1.0 Type Library")
+]
+library CONTROLSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(0700D3F5-913F-11D2-9887-00600823CFFB),
+		helpstring("_IDartBoardEvents Interface")
+	]
+	dispinterface _IDartBoardEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method OnScoreChanged")] void OnScoreChanged([in] long nNewScore);
+	};
+	
+
+	[
+		object,
+		uuid(76FFDC15-93C7-11D2-9889-00600823CFFB),
+		dual,
+		helpstring("ISmartDartBoard Interface"),
+		pointer_default(unique)
+	]
+	interface ISmartDartBoard : IDispatch
+	{
+		[propget, id(1), helpstring("property Score")] HRESULT Score([out, retval] long *pVal);
+		[propput, id(1), helpstring("property Score")] HRESULT Score([in] long newVal);
+		[id(2), helpstring("method ResetScore")] HRESULT ResetScore();
+	};
+	
+	[
+		object, dual,
+		uuid(76FFDC17-93C7-11D2-9889-00600823CFFB),
+		helpstring("ISmartDartBoardUI Interface"),
+		pointer_default(unique)
+	]
+	interface ISmartDartBoardUI : IDispatch
+	{
+        HRESULT AddToScore([in] long ringValue);
+        HRESULT ResetScore();
+	};
+
+	[
+		uuid(0700D3F4-913F-11D2-9887-00600823CFFB),
+		helpstring("DartBoard Class")
+	]
+	coclass DartBoard
+	{
+		[default] interface IDartBoard;
+		[default, source] dispinterface _IDartBoardEvents;
+	};
+	[
+		uuid(76FFDC16-93C7-11D2-9889-00600823CFFB),
+		helpstring("SmartDartBoard Class")
+	]
+	coclass SmartDartBoard
+	{
+		[default] interface ISmartDartBoard;
+		interface ISmartDartBoardUI;
+	};
+};

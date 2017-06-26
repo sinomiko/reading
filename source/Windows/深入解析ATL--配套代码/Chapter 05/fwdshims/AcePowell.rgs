@@ -1,0 +1,25 @@
+HKCR
+{
+	Fwdshims.AcePowell.1 = s 'AcePowell Class'
+	{
+		CLSID = s '{10712B75-370D-11D2-984B-00600823CFFB}'
+	}
+	Fwdshims.AcePowell = s 'AcePowell Class'
+	{
+		CLSID = s '{10712B75-370D-11D2-984B-00600823CFFB}'
+		CurVer = s 'Fwdshims.AcePowell.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {10712B75-370D-11D2-984B-00600823CFFB} = s 'AcePowell Class'
+		{
+			ProgID = s 'Fwdshims.AcePowell.1'
+			VersionIndependentProgID = s 'Fwdshims.AcePowell'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{10712B68-370D-11D2-984B-00600823CFFB}'
+		}
+	}
+}

@@ -1,0 +1,163 @@
+// ATLInternals.idl : IDL source for ATLInternals.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ATLInternals.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+
+    // IClimbableObject Interface
+	[
+		object,
+		uuid(95CD372D-FC5C-11D1-8CC3-00A0C9C8E50D),
+		dual,
+		helpstring("IClimbableObject Interface"),
+		pointer_default(unique)
+	]
+	interface IClimbableObject : IDispatch
+	{
+        const int DISPID_CLIMBON        = 1;
+        const int DISPID_CLIMBOFF       = 2;
+
+		[id(DISPID_CLIMBON),  helpstring("method ClimbOn")]  HRESULT ClimbOn(IUnknown* pClimber);
+		[id(DISPID_CLIMBOFF), helpstring("method ClimbOff")] HRESULT ClimbOff();
+	};
+
+    // IListener Interface
+	[
+		object,
+		uuid(AE491FB0-FBE7-11D1-8CC3-00A0C9C8E50D),
+		dual,
+		helpstring("IListener Interface"),
+		pointer_default(unique)
+	]
+	interface IListener : IDispatch
+	{
+        typedef enum SpeakerRole { Defendant, Plaintiff } SpeakerRole ;
+
+        const int DISPID_LISTENTO       = 1;
+        const int DISPID_STOPLISTENING  = 2;
+
+		[id(DISPID_LISTENTO),      helpstring("method ListenTo")]      HRESULT ListenTo(SpeakerRole role, IUnknown* pSpeaker);
+		[id(DISPID_STOPLISTENING), helpstring("method StopListening")] HRESULT StopListening(SpeakerRole role);
+	};
+
+    // INamedObject Interface
+	[
+		object,
+		uuid(450D6780-FC73-11d1-8CC3-00A0C9C8E50D),
+		dual,
+		helpstring("INamedObject Interface"),
+		pointer_default(unique)
+	]
+	interface INamedObject : IDispatch
+	{
+        const int DISPID_NAME           = 1;
+
+		[propget, id(DISPID_NAME), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propput, id(DISPID_NAME), helpstring("property Name")] HRESULT Name([in] BSTR newVal);
+	};
+
+    // ISpeaker Interface
+	[
+		object,
+		uuid(AE491FAD-FBE7-11D1-8CC3-00A0C9C8E50D),
+		dual,
+		helpstring("ISpeaker Interface"),
+		pointer_default(unique)
+	]
+	interface ISpeaker : IDispatch
+	{
+        const int DISPID_VOLUME         = 1;
+        const int DISPID_SPEECH         = 2;
+        const int DISPID_SPEAK          = 3;
+
+		[propget, id(DISPID_VOLUME), helpstring("property Volume")] HRESULT Volume([out, retval] long *pVal);
+		[propput, id(DISPID_VOLUME), helpstring("property Volume")] HRESULT Volume([in] long newVal);
+		[propget, id(DISPID_SPEECH), helpstring("property Speech")] HRESULT Speech([out, retval] BSTR *pVal);
+		[propput, id(DISPID_SPEECH), helpstring("property Speech")] HRESULT Speech([in] BSTR newVal);
+		[id(DISPID_SPEAK), helpstring("method Speak")] HRESULT Speak();
+	};
+
+
+    // Useful definitions of the event DISPIDs
+    const int DISPID_ONCLIMB        = 1;
+
+    const int DISPID_ONWHISPER      = 1;
+    const int DISPID_ONTALK         = 2;
+    const int DISPID_ONYELL         = 3;
+
+[
+	uuid(95CD3721-FC5C-11D1-8CC3-00A0C9C8E50D),
+	version(1.0),
+	helpstring("ATLInternals 1.0 Type Library")
+]
+library ATLINTERNALSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+    // _IClimbableObjectEvents Dispatch Interface
+	[
+		uuid(95CD372F-FC5C-11D1-8CC3-00A0C9C8E50D),
+		helpstring("_IClimbableObjectEvents Interface")
+	]
+	dispinterface _IClimbableObjectEvents
+	{
+		properties:
+		methods:
+		[id(DISPID_ONCLIMB), helpstring("event OnClimb")] void OnClimb(VARIANT_BOOL fClimbUp, IUnknown* pClimber);
+	};
+
+    // _ISpeakerEvents Dispatch Interface
+	[
+		uuid(AE491FAF-FBE7-11D1-8CC3-00A0C9C8E50D),
+		helpstring("_ISpeakerEvents Interface")
+	]
+	dispinterface _ISpeakerEvents
+	{
+		properties:
+		methods:
+		[id(DISPID_ONWHISPER), helpstring("method OnWhisper")] void OnWhisper(BSTR bstrSpeech);
+		[id(DISPID_ONTALK), helpstring("method OnTalk")]    void OnTalk(BSTR bstrSpeech);
+		[id(DISPID_ONYELL), helpstring("method OnYell")]    void OnYell(BSTR bstrSpeech);
+	};
+	
+    // Demagogue coclass
+	[
+		uuid(95CD3731-FC5C-11D1-8CC3-00A0C9C8E50D),
+		helpstring("Demagogue Class")
+	]
+	coclass Demagogue
+	{
+        [default]         interface      IUnknown;
+		                  interface      ISpeaker;
+                          interface      INamedObject;
+		[default, source] dispinterface _ISpeakerEvents;
+	};
+
+    // EarPolitic coclass
+	[
+		uuid(95CD3734-FC5C-11D1-8CC3-00A0C9C8E50D),
+		helpstring("EarPolitic Class")
+	]
+	coclass EarPolitic
+	{
+        [default]         interface      IUnknown;
+		                  interface      IListener;
+	};
+
+    // SoapBox coclass
+	[
+		uuid(95CD372E-FC5C-11D1-8CC3-00A0C9C8E50D),
+		helpstring("SoapBox Class"),
+        noncreatable
+	]
+	coclass SoapBox
+	{
+        [default]         interface      IUnknown;
+		                  interface      IClimbableObject;
+		[default, source] dispinterface _IClimbableObjectEvents;
+	};
+
+};

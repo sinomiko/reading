@@ -1,0 +1,163 @@
+1：在IOCP中投递WSASend返回WSA_IO_PENDING的时候，表示异步投递已经成功，但是稍后发送才会完成。这其中涉及到了三个缓冲区。
+网卡缓冲区，TCP/IP层缓冲区，程序缓冲区。
+情况一：调用WSASend发送正确的时候（即立即返回，且没有错误），TCP/IP将数据从程序缓冲区中拷贝到TCP/IP层缓冲区中，然后不锁定该程序缓冲区，由上层程序自己处理。TCP/IP层缓冲区在网络合适的时候，将其数据拷贝到网卡缓冲区，进行真正的发送。
+情况二：调用WSASend发送错误，但是错误码是WSA_IO_PENDING 的时候，表示此时TCP/IP层缓冲区已满，暂时没有剩余的空间将程序缓冲区的数据拷贝出来，这时系统将锁定用户的程序缓冲区，按照书上说的 WSASend指定的缓冲区将会被锁定到系统的非分页内存中。直到TCP/IP层缓冲区有空余的地方来接受拷贝我们的程序缓冲区数据才拷贝走，并将给 IOCP一个完成消息。
+情况三：调用WSASend发送错误，但是错误码不是WSA_IO_PENDING，此时应该是发送错误，应该释放该SOCKET对应的所有资源。
+
+2：在IOCP中投递WSARecv的时候，情况相似。
+情况一：调用WSARecv正确，TCP/IP将数据从TCP/IP层缓冲区拷贝到缓冲区，然后由我们的程序自行处理了。清除TCP/IP层缓冲区数据。
+情况二：调用WSARecv错误，但是返回值是WSA_IO_PENDING，此时是因为TCP/IP层缓冲区中没有数据可取，系统将会锁定我们投递的WSARecv的buffer，直到TCP/IP层缓冲区中有新的数据到来。
+情况三：调用WSARecv错误，错误值不是WSA_IO_PENDING，此时是接收出错，应该释放该SOCKET对应的所有资源。
+
+在以上情况中有几个非常要注意的事情：
+系统锁定非分页内存的时候，最小的锁定大小是4K(当然，这个取决于您系统的设 置，也可以设置小一些，在注册表里面可以改，当然我想这些数值微软应该比我们更知道什么合适了)，所以当我们投递了很多WSARecv或者WSASend 的时候，不管我们投递的Buffer有多大（0除外），系统在出现IO_PENGDING的时候，都会锁定我们4K的内存。这也就是经常有开发者出现 WSANOBUF的情况原因了。
+
+我们在解决这个问题的时候，要针对WSASend和WSARecv做处理
+1：投递WSARecv的时候，可以采用一个巧妙的设计，先投递0大小Buf的WSARecv，如果返回，表示有数据可以接收，我们开启真正的recv将数据从TCP/IP层缓冲区取出来，直到WSA_IO_PENGDING.
+2：对投递的WSARecv以及WSASend进行计数统计，如果超过了我们预定义的值，就不进行WSASend或者WSARecv投递了。
+3:现在我们应该就可以明白为什么WSASend会返回小于我们投递的buffer空间数据值了，是因为TCP/IP层缓冲区小于我们要发送的缓冲 区，TCP/IP只会拷贝他剩余可被Copy的缓冲区大小的数据走，然后给我们的WSASend的已发送缓冲区设置为移走的大小，下一次投递的时候，如果 TCP/IP层还未被发送，将返回WSA_IO_PENGDING。
+4：在很多地方有提到，可以关闭TCP/IP层缓冲区，可以提高一些效率和性能，这个从上面的分析来看，有这个可能，要实际的网络情况去实际分析了。
+
+ 
+
+
+==================
+
+关于数据包在应用层乱序问题就不多说了(IOCP荒废了TCP在传输层辛辛苦苦保证的有序)。
+
+这无关紧要，因为iocp要管理上千个SOCKET,每个SOCKET的读请求、写请求分别保证串行即可。
+
+ 
+
+=============
+
+关于GetQueuedCompletionStatus的返回值判断：
+
+我给超时值传的是0，直接测试，无须等待。
+
+这里我们关心这几个值：
+
+第二个参数所传回的byte值
+
+第三个参数所传回的complete key值 ——PER HANDLE DATA
+
+第四个参数所传回的OVERLAPPED结构指针 ——PER IO DATA
+
+系统设置的ERROR值。
+
+ 
+
+在超时情况下，byte值返回0，per handle data值是-1，per io data为NULL
+
+ 
+
+1.如果返回FALSE
+
+    one ： iocp句柄在外部被关闭。
+
+   WSAGetLastError返回6（无效句柄），byte值返回0，per handle data值是-1，per io data为NULL
+
+ 
+
+    two: 我们主动close一个socket句柄，或者CancelIO(socket)（且此时有未决的操作）
+
+    WSAGetLastError返回995（由于线程退出或应用程序请求，已放弃 I/O 操作）
+
+   byte值为0，
+
+   per handle data与per io data正确传回。
+
+ 
+
+   three：对端强退（且此时本地有未决的操作）
+
+   WSAGetLastError返回64（指定的网络名不再可用）
+
+  byte值为0，per handle data与per io data正确传回 
+
+ 
+
+ 
+
+2.如果返回TRUE【此时一定得到了你投递的OVERLAP结构】
+
+    one:  我接收到对端数据，然后准备再投递接收请求；但此期间，对端关闭socket。
+
+   WSARecv返回错误码10054：远程主机强迫关闭了一个现有的连接。
+
+TODO TODO
+
+   从网上搜到一个做法，感觉很不错：
+
+如果返回FALSE, 那么：如果OVERLAP为空，那一定是发生了错误(注意：请排除TIMEOUT错误)；
+
+如果OVERLAP不为空，有可能发生错误。不用管它，这里直接投递请求；如果有错，WSARecv将返回错误。关闭连接即可。
+
+ 
+
+ 
+
+============
+
+关于closesocket操作：
+
+ 
+
+ 
+
+ The closesocket function will initiate cancellation on the outstanding I/O operations, but that does not mean that an application will receive I/O completion for these I/O operations by the time the closesocket function returns. Thus, an application should not cleanup any resources (WSAOVERLAPPED structures, for example) referenced by the outstanding I/O requests until the I/O requests are indeed completed.
+
+ 
+
+在IOCP模式下，如果调用closesocket时有未决的pending   IO，将导致socket被重置，所以有时会出现数据丢失。正统的解决方式是使用shutdown函数（指定SD_SEND标志），注意这时可能有未完成 的发送pengding   IO，所以你应该监测是否该连接的所有是否已完成（也许你要用一个计数器来跟踪这些pending   IO），仅在所有send   pending   IO完成后调用shutdown。
+
+ 
+
+MSDN推荐的优雅关闭socket：
+
+ 
+
+Call WSAAsyncSelect to register for FD_CLOSE notification.
+Call shutdown with how=SD_SEND.
+When FD_CLOSE received, call recv until zero returned, or SOCKET_ERROR.
+Call closesocket.
+ 
+
+ FD_CLOSE being posted after all data is read from a socket. An application should check for remaining data upon receipt of FD_CLOSE to avoid any possibility of losing data.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+对每个使用AcceptEx接受的连接套结字使用setsockopt设置SO_UPDATE_ACCEPT_CONTEXT选项，这个选项原义是把listen套结字一些属性（包括socket内部接受/发送缓存大小等等）拷贝到新建立的套结字，却可以使后续的shutdown调用成功。
+
+ 
+
+/* SO_UPDATE_ACCEPT_CONTEXT is required for shutdown() to work fine*/
+
+       setsockopt( sockClient,
+
+                            SOL_SOCKET,
+
+                            SO_UPDATE_ACCEPT_CONTEXT,
+
+                            (char*)&m_sockListen,
+
+                            sizeof(m_sockListen) ) ;
+
+如果是调用AcceptEX接收的连接 不设置该选项的话，随后的shutdown调用
+将返回失败， WSAGetLastError() returns 10057 -- WSANOTCONN 

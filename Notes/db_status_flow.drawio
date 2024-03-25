@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-25T04:00:16.327Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="JkjG9RRPR42zdMyyqtjI" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-25T04:04:31.789Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="qc47bRUBgyVLdnfleobW" version="24.0.7" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="1914" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -70,7 +70,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QbPGDWv7qYdjSWNrfvIs-99" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeColor=#990000;strokeWidth=2;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="10">
+        <mxCell id="QbPGDWv7qYdjSWNrfvIs-99" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeColor=#990000;strokeWidth=2;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="10">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="360" y="336" as="sourcePoint" />
             <mxPoint x="50" y="680" as="targetPoint" />
@@ -106,12 +106,12 @@
         <mxCell id="QbPGDWv7qYdjSWNrfvIs-115" value="&#xa;1.上次请求master有新数据；&#xa;2.无新数据，超过1s没有delta过" style="text;spacingTop=-5;align=left;" vertex="1" parent="1">
           <mxGeometry x="215" y="450.5" width="180" height="59" as="geometry" />
         </mxCell>
-        <mxCell id="QbPGDWv7qYdjSWNrfvIs-116" value="" style="edgeStyle=elbowEdgeStyle;strokeColor=#990000;strokeWidth=2;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.572;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;elbow=vertical;" edge="1" parent="1" source="10" target="QbPGDWv7qYdjSWNrfvIs-111">
+        <mxCell id="QbPGDWv7qYdjSWNrfvIs-116" value="" style="edgeStyle=elbowEdgeStyle;strokeColor=#990000;strokeWidth=2;exitX=-0.009;exitY=0.428;exitDx=0;exitDy=0;entryX=0.572;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;elbow=vertical;exitPerimeter=0;" edge="1" parent="1" source="10" target="QbPGDWv7qYdjSWNrfvIs-111">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="399" y="520" as="sourcePoint" />
             <mxPoint x="150" y="460" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="190" y="510" />
+              <mxPoint x="200" y="580" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -151,8 +151,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QbPGDWv7qYdjSWNrfvIs-132" value="1.slave下载问题&#xa;2.load问题&#xa;" style="text;spacingTop=-5;align=left;" vertex="1" parent="1">
-          <mxGeometry x="120" y="220" width="170" height="27" as="geometry" />
+        <mxCell id="QbPGDWv7qYdjSWNrfvIs-132" value="slave驱动&#xa;1.slave下载问题&#xa;2.load问题&#xa;" style="text;spacingTop=-5;align=left;" vertex="1" parent="1">
+          <mxGeometry x="110" y="210.5" width="180" height="51" as="geometry" />
         </mxCell>
         <mxCell id="QbPGDWv7qYdjSWNrfvIs-134" value="" style="edgeStyle=orthogonalEdgeStyle;elbow=horizontal;strokeColor=#990000;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="2">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
@@ -166,8 +166,11 @@
             <mxPoint x="460" y="246" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QbPGDWv7qYdjSWNrfvIs-136" value="slave侧，收到master ERROR_NEED_FULL_REPLICATE" style="text;spacingTop=-5;align=center" vertex="1" parent="1">
-          <mxGeometry x="505" y="650" width="30" height="20" as="geometry" />
+        <mxCell id="QbPGDWv7qYdjSWNrfvIs-136" value="master驱动，slave收到master ERROR_NEED_FULL_REPLICATE" style="text;spacingTop=-5;align=center" vertex="1" parent="1">
+          <mxGeometry x="370" y="660" width="385" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QbPGDWv7qYdjSWNrfvIs-137" value="&#xa;slave: &#xa;DBWrapper::ApplyCheckPoint:" style="text;spacingTop=-5;align=center" vertex="1" parent="1">
+          <mxGeometry x="360" y="130" width="170" height="59" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
